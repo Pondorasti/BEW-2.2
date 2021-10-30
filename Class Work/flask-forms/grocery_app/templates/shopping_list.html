@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Your Shopping List</h1>
+
+<ul>
+  {% for item in shopping_list %}
+  <li>{{ item.name }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
